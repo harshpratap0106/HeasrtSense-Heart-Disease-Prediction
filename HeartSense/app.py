@@ -9,7 +9,7 @@ st.set_page_config(page_title="HeartSense", layout="centered")
 # Load files
 # -------------------------
 model = joblib.load("heart_best_model.pkl")
-scaler = joblib.load("scaler.pkl")
+scaler = joblib.load("min_max_scaler.pkl")
 columns = joblib.load("model_columns(2).pkl")
 threshold = joblib.load("best_threshold.pkl")
 
