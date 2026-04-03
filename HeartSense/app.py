@@ -23,7 +23,7 @@ anfis_models = [
 # -------------------------
 # UI
 # -------------------------
-st.title("❤️ HeartSense: Heart Disease Prediction System")
+st.title("HeartSense: Heart Disease Prediction System")
 
 st.sidebar.header("Patient Input")
 
@@ -47,7 +47,7 @@ if st.button("Predict"):
     prob = model.predict_proba(X_scaled)[0][1]
 
     # ANFIS
-    anfis_preds = [m.predict(X_scaled)[0] for m in anfis_models]
+    anfis_preds = [m.forward(X_scaled)[0] for m in anfis_models]
     anfis_risk = np.mean(anfis_preds)
 
     # IVCFS
