@@ -23,7 +23,7 @@ anfis_models = [
 # -------------------------
 # UI
 # -------------------------
-st.title("❤️ HeartSensse: Heart Disease Prediction System")
+st.title("❤️ HeartSense: Heart Disease Prediction System")
 
 st.sidebar.header("Patient Input")
 
