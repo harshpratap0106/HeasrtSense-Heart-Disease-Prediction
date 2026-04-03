@@ -2,23 +2,24 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import joblib
+import os 
 
 st.set_page_config(page_title="HeartSense", layout="centered")
 
 # -------------------------
-# Load files
 # -------------------------
-model = joblib.load("heart_best_model.pkl")
-scaler = joblib.load("min_max_scaler.pkl")
-columns = joblib.load("model_columns (2).pkl")
-threshold = joblib.load("best_threshold.pkl")
+BASE_DIR = os.path.dirname(__file__)
+
+model = joblib.load(os.path.join(BASE_DIR, "heart_best_model.pkl"))
+scaler = joblib.load(os.path.join(BASE_DIR, "scaler.pkl"))
+columns = joblib.load(os.path.join(BASE_DIR, "model_columns.pkl"))
+threshold = joblib.load(os.path.join(BASE_DIR, "best_threshold.pkl"))
 
 anfis_models = [
-    joblib.load("anfis_model_0.pkl"),
-    joblib.load("anfis_model_1.pkl"),
-    joblib.load("anfis_model_2.pkl")
+    joblib.load(os.path.join(BASE_DIR, "anfis_model_0.pkl")),
+    joblib.load(os.path.join(BASE_DIR, "anfis_model_1.pkl")),
+    joblib.load(os.path.join(BASE_DIR, "anfis_model_2.pkl"))
 ]
-
 # -------------------------
 # UI
 # -------------------------
