@@ -12,7 +12,7 @@ BASE_DIR = os.path.dirname(__file__)
 
 model = joblib.load(os.path.join(BASE_DIR, "heart_best_model.pkl"))
 scaler = joblib.load(os.path.join(BASE_DIR, "scaler.pkl"))
-columns = joblib.load(os.path.join(BASE_DIR, "model_columns.pkl"))
+columns = joblib.load(os.path.join(BASE_DIR, "model_columns (2).pkl"))
 threshold = joblib.load(os.path.join(BASE_DIR, "best_threshold.pkl"))
 
 anfis_models = [
