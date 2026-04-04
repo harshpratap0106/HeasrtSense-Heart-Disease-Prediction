@@ -98,7 +98,7 @@ if st.button("🔍 Predict"):
 
     try:
         # A. Initialize all features to 0
-        input_dict = {col: 0 for col in model_columns}
+        input_dict = {col: 0 for col in model_columns (2)}
 
         # B. Numeric features
         input_dict['Age'] = age
