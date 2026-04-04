@@ -188,4 +188,3 @@ if st.button("🔍 Predict"):
 
         # Confidence
         confidence = (1 - abs(risk_score - threshold)) * 100
-
