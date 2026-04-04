@@ -9,7 +9,7 @@ import os
 # -------------------------
 st.set_page_config(page_title="HeartSense", layout="centered")
 
-st.title("❤️ HeartSense: Heart Disease Prediction System")
+st.title("HeartSense: Heart Disease Prediction System")
 
 # -------------------------
 # Load Models (FIXED PATH)
