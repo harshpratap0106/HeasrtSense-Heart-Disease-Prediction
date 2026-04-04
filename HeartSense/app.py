@@ -94,7 +94,7 @@ input_df = user_input()
 # ==========================================
 # 4. PREDICTION LOGIC (FIXED)
 # ==========================================
-if submit_button:
+if st.button("🔍 Predict"):
 
     try:
         # A. Initialize all features to 0
